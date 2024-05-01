@@ -37,7 +37,7 @@ export const createSessionId = async () => {
       localStorage.setItem("session_id", session_id);
       return session_id;
     } catch (error) {
-      alert('error');
+      console.log(error);
     }
   }
 };
